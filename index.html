@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Processing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Upload and Process Resumes</h1>
+    <div id="info-container">
+      <p>Welcome to the Resume Processing tool! Use the upload button above to select and upload a ZIP file containing resumes. Once uploaded, the files will be sent to a FastAPI backend hosted via Render. Please note that processing may take some time, especially since I'm utilizing the free tier of Render, which provides minimal hardware resources. Processing times can extend up to 5 minutes. Additionally, due to resource limitations, not all features of the API may be available. However, once processing is complete, you'll be able to click the download button below to retrieve the data.csv file containing the processed data.</p>
+    </div>
+    <div id="upload-container">
+      <input type="file" id="upload-button" accept=".zip" />
+      <label for="upload-button" class="button">Choose a ZIP File</label>
+    </div>
+    <div id="download-container">
+      <button id="download-button">Download CSV</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
